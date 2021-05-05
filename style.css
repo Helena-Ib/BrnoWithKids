@@ -6,3 +6,17 @@ html {
 *.after {
   box-sizing: inherit;
 }
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.header__title {
+  font-family: 'Yeseva One', cursive;
+}
+
+.header__box {
+  display: flex;
+}
+
+/* Main Page */
