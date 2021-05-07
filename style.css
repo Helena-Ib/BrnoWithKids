@@ -9,6 +9,7 @@ html {
 
 body {
   font-family: 'PT Sans', sans-serif;
+  padding: 30px;
 }
 
 .header__title {
@@ -19,4 +20,11 @@ body {
   display: flex;
 }
 
+.main__desc p {
+  text-align: justify;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-around;
 /* Main Page */
