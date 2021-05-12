@@ -56,16 +56,20 @@ header {
 
 nav li {
   list-style: none;
+  border-bottom: 2px solid rgb(237, 174, 73);
+  max-width: 250px;
 }
 
 nav a {
   display: inline-block;
   text-decoration: none;
   padding: 1rem;
-  /* padding-bottom: 2rem;
-  padding-top: 1rem; */
   color: rgb(0, 121, 140);
   font-weight: bold;
+}
+
+ul.menu {
+  padding: 0;
 }
 
 .container {
