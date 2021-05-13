@@ -12,6 +12,7 @@ body {
   padding: 0;
   background-color: #f3f9fa;
   font-family: 'PT Sans', sans-serif;
+  line-height: 1.5;
 }
 
 header {
@@ -72,8 +73,19 @@ ul.menu {
   padding: 0;
 }
 
-.container {
+.container h2 {
   padding: 30px;
+}
+
+.container p {
+  padding: 0 30px;
+}
+
+h2 {
+  color: rgb(237, 174, 73);
+}
+.main__pic {
+  width: 100%;
 }
 
 h2::after {
