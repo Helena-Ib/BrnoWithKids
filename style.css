@@ -1,332 +1,305 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*.after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f9fa;
+  color: rgb(24, 78, 119);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* hlavicka */
+header {
+  background-color: rgb(237, 174, 73);
+}
+
+.header__title {
+  font-family: 'Yeseva One', cursive;
+  padding-left: 3rem;
+  color: rgb(0, 121, 140);
+  cursor: pointer;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* menu */
+.nav-btn,
+.nav-btn2 {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.nav-btn {
+  background-image: url('./icons/menuIcon.png');
+}
+
+.nav-btn2 {
+  background-image: url('./icons/crossMenu.png');
+}
+
+.nav-closed {
+  display: none;
+}
+
+nav li {
+  list-style: none;
+  border-bottom: 2px solid rgb(237, 174, 73);
+  max-width: 250px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  color: rgb(0, 121, 140);
+  font-weight: bold;
+}
+
+ul.menu {
+  padding: 0;
+}
+
+/* main */
+.container {
+  background-color: white;
+}
+.container h2 {
+  padding: 30px;
+}
+
+.container p {
+  padding: 0 30px;
+}
+
+h2 {
+  color: rgb(237, 174, 73);
+}
+
+/* cover picture */
+.main__pic {
+  width: 100%;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: rgb(0, 121, 140);
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.main__desc p {
+  text-align: justify;
+}
+
+/* medailonky */
+.fotecka {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profil {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.profil {
+  flex: 1 1 100%;
+}
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: rgb(0, 121, 140);
+}
+#info__country {
+  color: rgb(237, 174, 73);
+}
+
+.info li {
+  list-style-type: none;
+}
+
+/* patička */
+.footer {
+  background-color: rgb(0, 61, 91);
+  color: white;
+  text-align: center;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.page__menu img {
+  width: 100%;
+  max-height: 600px;
+}
+
+@media screen and (min-width: 900px) {
+  /* menu */
+  .navigation {
+    flex-direction: row;
   }
-  *,
-  *:before,
-  *.after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #f3f9fa;
-    font-family: 'PT Sans', sans-serif;
-    line-height: 1.5;
-  }
-  
-  header {
-    background-color: rgb(237, 174, 73);
-  }
-  
-  .header__title {
-    font-family: 'Yeseva One', cursive;
-    padding-left: 3rem;
-    color: rgb(0, 121, 140);
-    cursor: pointer;
-  }
-  
-  .topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  
-  .nav-btn,
-  .nav-btn2 {
-    width: 3rem;
-    height: 3rem;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    background-size: contain;
-    cursor: pointer;
-  }
-  
+
   .nav-btn {
-    background-image: url('./icons/menuIcon.png');
-  }
-  
-  .nav-btn2 {
-    background-image: url('./icons/crossMenu.png');
-  }
-  
-  .nav-closed {
     display: none;
   }
-  
-  nav li {
-    list-style: none;
-    border-bottom: 2px solid rgb(237, 174, 73);
-    max-width: 250px;
-  }
-  
+
   nav a {
     display: inline-block;
     text-decoration: none;
-    padding: 1rem;
-    color: rgb(0, 121, 140);
-    font-weight: bold;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
-  
-  ul.menu {
-    padding: 0;
-  }
-  
-  .container h2 {
-    padding: 30px;
-  }
-  
-  .container p {
-    padding: 0 30px;
-  }
-  
-  h2 {
-    color: rgb(237, 174, 73);
-  }
-  .main__pic {
-    width: 100%;
-  }
-  
-  h2::after {
-    content: '';
+
+  .nav-closed {
     display: block;
-    width: 80px;
-    height: 4px;
-    background-color: rgb(0, 121, 140);
-    margin-top: 20px;
-    margin-left: -30px;
   }
-  
-  .main__desc p {
-    text-align: justify;
-  }
-  .footer {
-    /* padding: 30px; */
-    background-color: rgb(0, 61, 91);
-    color: white;
-    text-align: center;
-  }
-  .footer__links {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .page__menu img {
-    width: 100%;
-    max-height: 600px;
-  }
-  
-  @media screen and (min-width: 900px) {
-    .navigation {
-      flex-direction: row;
-    }
-  
-    .nav-btn {
-      display: none;
-    }
-  
-    nav a {
-      display: inline-block;
-      text-decoration: none;
-      margin-top: 0rem;
-      margin-bottom: 0rem;
-    }
-  
-    .nav-closed {
-      display: block;
-    }
-  
-    .container {
-      max-width: 960px;
-      background-color: white;
-      margin: auto;
-    }
-  
-    .page__menu {
-      display: flex;
-    }
-  
-    .page__menu--item {
-      flex: 1 1 50%;
-    }
+
+  /* main */
+  .container {
+    max-width: 960px;
+    background-color: white;
+    margin: auto;
   }
 
   /* medailonky
   */
 
-  .fotecka{
+  .team {
+    display: flex;
+  }
+
+  .profil {
+    flex: 1 1 calc(100% / 3 - 10px);
+  }
+
+  .fotecka {
     width: 100px;
     height: 100px;
     border-radius: 50%;
   }
-  
-  .profil{
-    border: 1px solid lightgrey;
-    border-radius: 5%;
-    padding: 20px;
-   
-  }
-  
-  .profil{
-    flex: 1 1 25%;
-  }
 
-
-  .info{
+  .info {
     align-items: center;
   }
-  
-  @media (max-width: 540px){
-    .tym{
-      display: block;
-    }
-    .profil{
-      flex: 1 1 25%;
-    }
-  
-    .profil{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 5px;
-    }
-    .info{
-      text-align: center;
-    }
 
-    .container{
-      margin: auto;
-    }
+  /* Health Care - stranka */
+  .page__menu {
+    display: flex;
   }
 
-    
-  @media (min-width: 540px) and (max-width:960px){
-    .tym{
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .profil{
-      flex: 1 1 calc(100%/2 - 10px);
-    }
-  
-    .profil{
-      display: flex;
-      padding: 20px;
-      margin-bottom: 10px;
-      width: 50%;
-    }
-  
-    .fotecka{
-      width: 80px;
-      height: 100px;
-    }
-  
-    .info{
-      padding-left: 20px;
-      text-align: left;
-    }
-
-    .container{
-      margin: auto;
-    }
-  
+  .page__menu--item {
+    flex: 1 1 50%;
   }
-  
-  @media (min-width: 961px) {
-    .tym{
-      display: flex;	
-    }
-    .profil{
-      flex: 1 1 25%;
-    }
-    .profil{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-right: 10px;
-    }
-  
-    .info{
-      text-align: center;
-    }
-
-    .container{
-      margin: auto;
-    }
-  }
-
-  
 
   /*pokus vylety*/
   .vylety {
-  max-width: 100%;
-  margin: 30px auto;
-}
+    max-width: 100%;
+    margin: 30px auto;
+  }
 
-.trip {
-  display: flex;
-  align-items: flex-start;
-  padding: 15px;
-  background-color: rgba(255, 255, 255, 0.90);
-  cursor: pointer;
-  border-radius: 4px;
-}
+  .trip {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    border-radius: 4px;
+  }
 
-.trip:hover {
-  background-color: #f2e7da;
-}
+  .trip:hover {
+    background-color: #f2e7da;
+  }
 
-.trip + .trip {
-  margin-top: 10px;
-}
+  .trip + .trip {
+    margin-top: 10px;
+  }
 
-.trip__foto {
-  flex: 0 0 50%;
-  margin-right: 20px;
-  margin-top: 30px;
-}
+  .trip__foto {
+    flex: 0 0 50%;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
 
-.trip__foto img {
-  display: block;
-  width: 100%;
-  border-radius: 4px;
-}
+  .trip__foto img {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+  }
 
-.trip__detail {
-  flex: 1;
-  font-size: 15px;
-}
+  .trip__detail {
+    flex: 1;
+    font-size: 15px;
+  }
 
-.trip__nazev {
-  font-size: 25px;
-  padding-left: 30px;
-  font-family: 'Yeseva One', cursive;
-  color: rgb(0, 121, 140);
-}
+  .trip__nazev {
+    font-size: 25px;
+    padding-left: 30px;
+    font-family: 'Yeseva One', cursive;
+    color: rgb(0, 121, 140);
+  }
 
-.trip__podtitul {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  color: #888;
-  padding-left: 30px;
-}
+  .trip__podtitul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #888;
+    padding-left: 30px;
+  }
 
-.trip__popis {
-  margin-top: 10px;
-}
+  .trip__popis {
+    margin-top: 10px;
+  }
 
-/*pokus page menu item*/
-.page__menu--item{
-  display: block;
-  align-items: flex-start;
-  padding: 15px;
-  background-color: rgba(255, 255, 255, 0.90);
-  cursor: pointer;
-  border-radius: 4px;
-  width: 50%;
-}
+  /*pokus page menu item*/
+  .page__menu--item {
+    display: block;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    border-radius: 4px;
+    width: 50%;
+  }
 
-.page__menu--item:hover {
-  background-color: #f2e7da;}
+  .page__menu--item:hover {
+    background-color: #f2e7da;
+  }
+}
