@@ -48,11 +48,11 @@ header {
 }
 
 .nav-btn {
-  background-image: url('./icons/menuIcon.png');
+  background-image: url('./icons/menuHamburger.jpg');
 }
 
 .nav-btn2 {
-  background-image: url('./icons/crossMenu.png');
+  background-image: url('./icons/crossmenu.jpg');
 }
 
 .nav-closed {
@@ -112,6 +112,14 @@ h2::after {
   text-align: justify;
 }
 
+.main__desc li {
+  list-style-type: none;
+}
+
+.sipka {
+  width: 60px;
+}
+
 /* medailonky */
 .fotecka {
   width: 100px;
@@ -167,6 +175,10 @@ h2::after {
   justify-content: space-around;
 }
 
+.logo {
+  width: 80px;
+}
+
 .page__menu img {
   width: 100%;
   max-height: 600px;
@@ -208,7 +220,7 @@ h2::after {
   }
 
   .profil {
-    flex: 1 1 calc(100% / 3 - 10px);
+    flex: 1 1 calc(100% / 2 - 10px);
   }
 
   .fotecka {
@@ -224,6 +236,7 @@ h2::after {
   /* Health Care - stranka */
   .page__menu {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .page__menu--item {
