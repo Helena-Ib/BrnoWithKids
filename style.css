@@ -22,11 +22,13 @@ header {
   background-color: rgb(237, 174, 73);
 }
 
-.header__title {
+.header__title a {
   font-family: 'Yeseva One', cursive;
   padding-left: 3rem;
   color: rgb(0, 121, 140);
   cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .topbar {
@@ -117,7 +119,11 @@ h2::after {
 }
 
 .sipka {
-  width: 60px;
+  width: 25px;
+}
+
+.activities {
+  padding-left: 10px;
 }
 
 /* medailonky */
