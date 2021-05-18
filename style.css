@@ -272,7 +272,6 @@ h2::after {
     margin-top: 10px;
   }
 
-<<<<<<< HEAD
   .trip__foto {
     flex: 0 0 50%;
     margin-right: 20px;
@@ -285,22 +284,6 @@ h2::after {
     border-radius: 4px;
     transition: transform 3s;
   }
-=======
-.trip__foto img {
-  display: block;
-  max-width: 100%;
-  border-radius: 4px;
-  
-}
-
-.trip__detail {
-  flex: 1;
-  font-size: 15px;
-  height: 400px;
-  overflow-y: scroll;
-  background-color: white;
-}
->>>>>>> 682a22f38c12b537d980c47959c9e7d7f6513546
 
   .trip__detail {
     flex: 1;
@@ -405,4 +388,3 @@ h2::after {
     margin-top: 10px;
     }
   */
-
