@@ -277,6 +277,7 @@ h2::after {
   flex: 0 0 50%;
   margin-right: 20px;
   margin-top: 10px;
+  max-width: 100%;
 }
 
 .trip__foto img {
