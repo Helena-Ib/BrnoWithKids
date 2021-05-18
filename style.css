@@ -250,7 +250,7 @@ h2::after {
   }
 
   /*pokus vylety*/
-  .vylety {
+ .vylety {
   max-width: 100%;
   margin: 30px auto;
 }
@@ -277,7 +277,6 @@ h2::after {
   flex: 0 0 50%;
   margin-right: 20px;
   margin-top: 10px;
-  max-width: 100%;
 }
 
 .trip__foto img {
@@ -290,7 +289,7 @@ h2::after {
   flex: 1;
   font-size: 15px;
   height: 400px;
-  overflow-y: scroll;
+  overflow: scroll;
   background-color: white;
 }
 
@@ -311,6 +310,7 @@ h2::after {
 .trip__popis {
   margin-top: 10px;
 }
+
 
   /*pokus page menu item*/
   .page__menu--item {
