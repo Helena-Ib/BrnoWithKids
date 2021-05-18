@@ -281,6 +281,14 @@ h2::after {
     flex: 1 1 50%;
   }
 
+  .pic__title {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    transform: translateY(-400%);
+    color: white;
+    padding: 20px;
+  }
+
   /*pokus vylety*/
   .vylety {
     max-width: 100%;
