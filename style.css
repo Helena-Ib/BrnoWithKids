@@ -250,62 +250,67 @@ h2::after {
   }
 
   /*pokus vylety*/
-  .vylety {
-    max-width: 100%;
-    margin: 30px auto;
-  }
+ .vylety {
+  max-width: 100%;
+  margin: 30px auto;
+}
 
-  .trip {
-    display: flex;
-    align-items: flex-start;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.9);
-    cursor: pointer;
-    border-radius: 4px;
-  }
+.trip {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.90);
+  cursor: pointer;
+  border-radius: 4px;
 
-  .trip:hover {
-    background-color: #f2e7da;
-  }
+}
 
-  .trip + .trip {
-    margin-top: 10px;
-  }
+.trip:hover {
+  background-color: #f2e7da;
+}
 
-  .trip__foto {
-    flex: 0 0 50%;
-    margin-right: 20px;
-    margin-top: 30px;
-  }
+.trip + .trip {
+  margin-top: 10px;
+}
 
-  .trip__foto img {
-    display: block;
-    width: 100%;
-    border-radius: 4px;
-  }
+.trip__foto {
+  flex: 0 0 50%;
+  margin-right: 20px;
+  margin-top: 10px;
+}
 
-  .trip__detail {
-    flex: 1;
-    font-size: 15px;
-  }
+.trip__foto img {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
 
-  .trip__nazev {
-    font-size: 25px;
-    padding-left: 30px;
-    font-family: 'Yeseva One', cursive;
-    color: rgb(0, 121, 140);
-  }
+.trip__detail {
+  flex: 1;
+  font-size: 15px;
+  height: 400px;
+  overflow: scroll;
+  background-color: white;
+}
 
-  .trip__podtitul {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: #888;
-    padding-left: 30px;
-  }
+.trip__nazev {
+  font-size: 25px;
+  padding-left: 30px;
+  font-family: 'Yeseva One', cursive;
+  color: rgb(0, 121, 140);
+}
 
-  .trip__popis {
-    margin-top: 10px;
-  }
+.trip__podtitul {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #888;
+  padding-left: 30px;
+}
+
+.trip__popis {
+  margin-top: 10px;
+}
+
 
   /*pokus page menu item*/
   .page__menu--item {
@@ -323,7 +328,7 @@ h2::after {
   }
 }
 
-  /*kurim box*/
+  /*kurim box
   .kurim {
     display: flex;
     align-items: flex-start;
@@ -383,4 +388,4 @@ h2::after {
   .kurim__popis {
     margin-top: 10px;
     }
-  
+  */
