@@ -264,11 +264,16 @@ button:active {
 /*pridan bottom form*/
 
 /* vacctination - tabulky */
+.cover__photo {
+  max-height: 140px;
+  filter: opacity(10%);
+}
 .table__scheme h3 {
   color: rgb(237, 174, 73);
   padding: 30px;
   text-align: center;
 }
+
 @media screen and (min-width: 900px) {
   /* menu */
   .navigation {
