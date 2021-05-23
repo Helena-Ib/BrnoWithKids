@@ -226,12 +226,13 @@ h2::after {
   max-width: 800px;
   margin: 30px auto;
   padding: 15px;
-  background-color:rgb(237, 174, 73);
+  background-color: rgb(237, 174, 73);
   border-radius: 4px;
   display: flex;
 }
 
-input, button {
+input,
+button {
   padding: 10px 15px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -262,6 +263,12 @@ button:active {
 }
 /*pridan bottom form*/
 
+/* vacctination - tabulky */
+.table__scheme h3 {
+  color: rgb(237, 174, 73);
+  padding: 30px;
+  text-align: center;
+}
 @media screen and (min-width: 900px) {
   /* menu */
   .navigation {
