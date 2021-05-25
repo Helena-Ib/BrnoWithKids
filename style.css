@@ -19,27 +19,89 @@ body {
 
 /* hlavicka */
 header {
-  background-color: rgb(237, 174, 73);
+  min-height: 97px;
 }
 
-.header__title a {
+header.burger-collapsed {
+  width: 100%;
+}
+
+header.burger-collapsed .navigation__burger-btn {
+  display: block;
+}
+
+header h1 {
   font-family: 'Yeseva One', cursive;
-  padding-left: 3rem;
+  background-color: rgb(237, 174, 73);
+  margin: 0;
+  padding: 2rem 0 1rem 3rem;
+}
+
+header h1 a {
   color: rgb(0, 121, 140);
-  cursor: pointer;
-  display: inline-block;
   text-decoration: none;
 }
 
-.topbar {
+header.burger-expanded {
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header.burger-expanded .navigation__burger-btn {
+  display: none;
+}
+
+header.burger-collapsed {
+  position: fixed;
+  background-color: rgb(237, 174, 73);
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
+}
+
+header.burger-collapsed h1 {
+  position: fixed;
+  display: inline-block;
+  background: transparent;
+}
+
+header.burger-collapsed .burger-navigation {
+  display: none;
+}
+
+.navigation__close-btn,
+.navigation__burger-btn {
+  position: absolute;
+  color: rgb(0, 121, 140);
+  font-size: 3rem;
+  top: 1rem;
+  right: 2rem;
+}
+
+.navigation__close-btn:hover {
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.3));
+}
+
+.navigation__burger-btn {
+  font-size: 2.5rem;
+  top: 1.6rem;
+}
+
+nav.static-navigation {
+  display: none;
+}
+
+nav.static-navigation ul li {
+  display: inline-block;
+  width: auto;
+  padding: 0 1em;
 }
 
 /* menu */
-.nav-btn,
-.nav-btn2 {
+.nav-btn {
   width: 4rem;
   height: 4rem;
   padding: 0;
@@ -53,10 +115,6 @@ header {
   background-image: url('./icons/menu.png');
 }
 
-.nav-btn2 {
-  background-image: url('./icons/crossmenu.jpg');
-}
-
 .nav-closed {
   display: none;
 }
@@ -67,7 +125,7 @@ nav li {
   max-width: 250px;
 }
 
-nav a {
+nav ul li a {
   display: inline-block;
   text-decoration: none;
   padding: 1rem;
@@ -265,8 +323,7 @@ button:active {
 
 /* vacctination - tabulky */
 .cover__photo {
-  max-height: 140px;
-  filter: opacity(10%);
+  filter: opacity(20%);
 }
 .table__scheme h3 {
   color: rgb(237, 174, 73);
@@ -274,21 +331,21 @@ button:active {
   text-align: center;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1300px) {
   /* menu */
   .navigation {
     flex-direction: row;
   }
 
-  .nav-btn {
-    display: none;
+  .navigation__burger-btn {
+    display: none !important;
   }
 
-  nav a {
+  nav.static-navigation {
     display: inline-block;
-    text-decoration: none;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
   }
 
   .nav-closed {
@@ -413,7 +470,79 @@ button:active {
   .page__menu--item:hover {
     background-color: #f2e7da;
   }
+
+  /* zastíněná cover picture */
+  .cover__photo {
+    background: url(obrazkyHelca/vaccination.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+  }
 }
+
+/*kurim box
+  .kurim {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.90);
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .kurim:hover {
+    background-color: #f2e7da;
+  }
+  
+  .kurim + .kurim {
+    margin-top: 10px;
+  }
+  
+  .kurim__foto {
+    flex: 0 0 50%;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .kurim__foto img {
+    display: flex;
+    width: 100%;
+    border-radius: 4px;
+    margin: auto;
+  }
+  
+  .kurim__foto:hover {
+    background-color: #f2e7da;
+  }
+  
+  .kurim__detail {
+    flex: 1;
+    font-size: 15px;
+  }
+  
+  .kurim__nazev {
+    font-size: 25px;
+    padding-left: 30px;
+    font-family: 'Yeseva One', cursive;
+    color: rgb(0, 121, 140);
+  }
+  
+  .kurim__podtitul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: rgb(138, 136, 31);
+    padding-left: 30px;
+  }
+  
+  .kurim__popis {
+    margin-top: 10px;
+    }
+  */
+
 
 /*kurim box
   .kurim {
